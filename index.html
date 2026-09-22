@@ -1,49 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Flores Amarillas 🌻</title>
-
+    <title>Para ti 🌻</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <div class="contenedor">
+    <div class="universo"></div>
 
-        <h1>🌻 Para una persona especial  🌻</h1>
+    <div class="estrellas">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>✦</span>
+    </div>
 
-        <p class="mensaje">
-            Estas flores son para ti,
-            porque eres una persona muy especial para mí. 💛
+    <div class="estrella-fugaz estrella1"></div>
+    <div class="estrella-fugaz estrella2"></div>
+    <div class="estrella-fugaz estrella3"></div>
+
+    <main class="contenedor">
+
+        <p class="pequeno">✨ Hay algo que quiero decirte ✨</p>
+
+        <h1>Para una persona especial</h1>
+
+        <p class="subtitulo">
+            No podía regalarte simplemente unas flores...
+            tenía que hacer algo diferente. 🌻
         </p>
 
-        <div class="flores">
+        <div class="flores-3d">
 
-            <div class="flor">🌻</div>
-            <div class="flor">🌻</div>
-            <div class="flor">🌻</div>
-            <div class="flor">🌻</div>
-            <div class="flor">🌻</div>
+            <div class="flor flor1">
+                <div class="petalo p1"></div>
+                <div class="petalo p2"></div>
+                <div class="petalo p3"></div>
+                <div class="petalo p4"></div>
+                <div class="petalo p5"></div>
+                <div class="petalo p6"></div>
+                <div class="centro">🌻</div>
+            </div>
+
+            <div class="flor flor2">
+                <div class="petalo p1"></div>
+                <div class="petalo p2"></div>
+                <div class="petalo p3"></div>
+                <div class="petalo p4"></div>
+                <div class="petalo p5"></div>
+                <div class="petalo p6"></div>
+                <div class="centro">🌻</div>
+            </div>
+
+            <div class="flor flor3">
+                <div class="petalo p1"></div>
+                <div class="petalo p2"></div>
+                <div class="petalo p3"></div>
+                <div class="petalo p4"></div>
+                <div class="petalo p5"></div>
+                <div class="petalo p6"></div>
+                <div class="centro">🌻</div>
+            </div>
 
         </div>
 
-        <button onclick="mostrarMensaje()">
-            💌 Tengo algo para ti
+        <p class="indicacion">💌 Abre la carta</p>
+
+        <div class="carta" id="carta">
+
+            <div class="sobre">
+
+                <div class="solapa"></div>
+
+                <div class="hoja">
+
+                    <h2>Para ti 💛</h2>
+
+                    <p>
+                        Estas flores amarillas son para ti.
+                    </p>
+
+                    <p>
+                        Porque hay personas que llegan a nuestra vida
+                        y terminan siendo mucho más especiales de lo que
+                        imaginábamos.
+                    </p>
+
+                    <p>
+                        Espero que cuando veas estas flores,
+                        recuerdes que alguien pensó en ti
+                        y quiso sacarte una sonrisa. 🌻✨
+                    </p>
+
+                    <p class="final">
+                        Con mucho cariño 💛
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button id="boton">
+            💌 Abrir mi carta
         </button>
 
-        <p id="mensajeOculto"></p>
+        <p id="mensaje"></p>
 
-    </div>
+    </main>
+
+    <div class="brillo"></div>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
