@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #fff176,
+        #ffd54f,
+        #ffca28
+    );
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor {
+
+    width: 90%;
+
+    max-width: 750px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+
+}
+
+
+/* TÍTULO */
+
+h1 {
+
+    color: #e5a900;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* MENSAJE */
+
+.mensaje {
+
+    color: #555;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+}
+
+
+/* FLORES */
+
+.flores {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 40px 0;
+
+}
+
+
+/* CADA FLOR */
+
+.flor {
+
+    font-size: 70px;
+
+    animation: flotar 2s infinite ease-in-out;
+
+}
+
+
+/* ANIMACIÓN */
+
+@keyframes flotar {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-20px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* BOTÓN */
+
+button {
+
+    border: none;
+
+    background: #fbc02d;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+button:hover {
+
+    background: #f9a825;
+
+    transform: scale(1.08);
+
+}
+
+
+/* MENSAJE OCULTO */
+
+#mensajeOculto {
+
+    margin-top: 25px;
+
+    color: #d88a00;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+@media (max-width: 600px) {
+
+    .contenedor {
+
+        padding: 25px;
+
+    }
+
+    h1 {
+
+        font-size: 32px;
+
+    }
+
+    .mensaje {
+
+        font-size: 17px;
+
+    }
+
+    .flores {
+
+        gap: 5px;
+
+    }
+
+    .flor {
+
+        font-size: 45px;
+
+    }
+
+    button {
+
+        font-size: 16px;
+
+        padding: 12px 22px;
+
+    }
+
+}
